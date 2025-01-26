@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB imformation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #78AAC3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #CAF3F5;
+            padding: 10px;
+        }
+        nav a {
+            color: #000080;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #97C8D6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* กำหนดรูปแบบของ <div> */
+            html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .box1 {
+            width: 10%;
+            height: 70px;
+            background: #94f3f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: #0000CD;
+            font-weight: bold;
+            transition: width 1s;
+            -moz-transition: width 1s; /* Firefox 4 */
+            -webkit-transition: width 1s; /* Safari and Chrome */
+            -o-transition: width 1s; /* Opera */
+        }
+
+        /* เมื่อมีการคลิกหรือสัมผัส */
+   .box1.clicked {
+        width: 100%; /* ขยายขนาดเมื่อคลิกครั้งแรก */
+    }
+
+    /* ข้อความเริ่มต้น */
+    .box1::before {
+        content: "MY NAME"; 
+    }
+
+    /* ข้อความที่เปลี่ยนหลังจากคลิก */
+    .box1.clicked::before {
+        content: "Hi. My name's jutamanee singrueng. Feel free to call me BB! ntmy<3"; /* ข้อความเมื่อคลิก */
+    }
+
+    /* การตั้งค่า transition ให้ขยายและย่อขนาดอย่างราบรื่น */
+    .box1.clicked {
+        background: #f894d7;
+    }
+
+        
+        /* กำหนดรูปแบบของ <div> */
+            .box2 {
+            width: 20%;
+            height: 70px;
+            background: #7af0f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            transition: width 1s;
+            -moz-transition: width 1s; /* Firefox 4 */
+            -webkit-transition: width 1s; /* Safari and Chrome */
+            -o-transition: width 1s; /* Opera */
+        }
+ /* เมื่อมีการคลิกหรือสัมผัส */
+ .box2.clicked {
+        width: 100%; /* ขยายขนาดเมื่อคลิกครั้งแรก */
+    }
+
+    /* ข้อความเริ่มต้น */
+    .box2::before {
+        content: "AGE"; 
+    }
+
+    /* ข้อความที่เปลี่ยนหลังจากคลิก */
+    .box2.clicked::before {
+        content: "I was born on September 10th, 2004. At present, I have reached the age of 20. (ฺํBY 2025)"; /* ข้อความเมื่อคลิก */
+    }
+
+    /* การตั้งค่า transition ให้ขยายและย่อขนาดอย่างราบรื่น */
+    .box2.clicked {
+        background: #f77adc;
+    }
+
+        .box3 {
+            width: 30%;
+            height: 70px;
+            background: #6fedf4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            transition: width 1s;
+            -moz-transition: width 1s; /* Firefox 4 */
+            -webkit-transition: width 1s; /* Safari and Chrome */
+            -o-transition: width 1s; /* Opera */
+        }
+ /* เมื่อมีการคลิกหรือสัมผัส */
+ .box3.clicked {
+        width: 100%; /* ขยายขนาดเมื่อคลิกครั้งแรก */
+    }
+
+    /* ข้อความเริ่มต้น */
+    .box3::before {
+        content: "Education"; 
+    }
+
+    /* ข้อความที่เปลี่ยนหลังจากคลิก */
+    .box3.clicked::before {
+        content: "I am currently pursuing my studies at RMUTK University, specializing in Business Administration with a focus on Information Technology and Digital Business, as part of a four-year program."; /* ข้อความเมื่อคลิก */
+    }
+
+    /* การตั้งค่า transition ให้ขยายและย่อขนาดอย่างราบรื่น */
+    .box3.clicked {
+        background-color: #f46fe2; /* สีพื้นหลังเมื่อคลิก */
+    }
+
+        .box4 {
+            width: 40%;
+            height: 70px;
+            background: #46eff8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            transition: width 1s;
+            -moz-transition: width 1s; /* Firefox 4 */
+            -webkit-transition: width 1s; /* Safari and Chrome */
+            -o-transition: width 1s; /* Opera */
+        }
+   /* เมื่อมีการคลิกหรือสัมผัส */
+   .box4.clicked {
+        width: 100%; /* ขยายขนาดเมื่อคลิกครั้งแรก */
+    }
+
+    /* ข้อความเริ่มต้น */
+    .box4::before {
+        content: "Passionate"; 
+    }
+
+    /* ข้อความที่เปลี่ยนหลังจากคลิก */
+    .box4.clicked::before {
+        content: "I am interested in studying data, including SQL, database management, data analytics, and data science, and aim to enhance my expertise through deep learning in the future.";
+        /* ข้อความเมื่อคลิก */
+    }
+
+    /* การตั้งค่า transition ให้ขยายและย่อขนาดอย่างราบรื่น */
+    .box4.clicked {
+        background: #f546f8;
+    }
+
+        .box5 {
+            width: 50%;
+            height: 70px;
+            background: #12edf8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            transition: width 1s;
+            -moz-transition: width 1s; /* Firefox 4 */
+            -webkit-transition: width 1s; /* Safari and Chrome */
+            -o-transition: width 1s; /* Opera */
+        } 
+
+
+          /* เมื่อมีการคลิกหรือสัมผัส */
+          .box5.clicked {
+        width: 100%; /* ขยายขนาดเมื่อคลิกครั้งแรก */
+    }
+
+    /* ข้อความเริ่มต้น */
+    .box5::before {
+        content: "Inspiration"; 
+    }
+
+    /* ข้อความที่เปลี่ยนหลังจากคลิก */
+    .box5.clicked::before {
+        content: "Job Natdhanai :)"; /* ข้อความเมื่อคลิก */
+    }
+
+    /* การตั้งค่า transition ให้ขยายและย่อขนาดอย่างราบรื่น */
+    .box5.clicked {
+        background: #f812d9;
+    }
+
+    </style>
+</head>
+<body>
+    
+<header>
+    <h1>Hi this is my test website. I do it for fun! Enjoy ur time<3</h1>
+</header>
+
+<nav>
+    <a href="index3.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Help</a>
+</nav>
+
+<main>
+    <h2>My data imformation</h2>
+    <p>นี่คือตัวอย่างเว็บไซต์ที่สร้างด้วย HTML ครับ.</p>
+    <p>คุณสามารถปรับแต่งเว็บไซต์นี้ตามความต้องการของคุณได้!</p>
+    <p>This example does not work in Internet Explorer. </p>
+
+    <div class="box1" id="box1"></div>
+    <div class="box2" id="box2"></div>
+    <div class="box3" id="box3"></div>
+
+   
+    <div class="box4" id="box4"></div>
+    <!-- Box 5 อยู่ข้างล่างสุด -->
+    <div class="box5" id="box5"></div>
+
+
+
+    <br> <br> <br> <br> 
+
+</main>
+
+<footer>
+
+    <p>© 2025 BB WEBSITE</p>
+</footer>
+<script>
+    // เลือกกล่องทั้งหมดจาก box1 ถึง box5
+    const boxes = document.querySelectorAll('#box1, #box2, #box3, #box4, #box5');
+
+    // การจับเหตุการณ์คลิกบนกล่อง
+    boxes.forEach(function(box) {
+        box.addEventListener('click', function() {
+            box.classList.toggle('clicked'); // สลับสถานะการคลิก (ขยาย / ย่อ)
+        });
+    });
+</script>
+
+
+</body>
+</html>
